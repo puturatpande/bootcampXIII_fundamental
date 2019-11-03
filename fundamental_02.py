@@ -32,9 +32,26 @@ class Segitiga:
 
     def hitung_luas(self):
         return self.alas*self.tinggi / 2
-Class
+
+class Segitiga_samasisi(Segitiga):
+    def is_Segitiga_samasisi(self):
+        return True
+
+class Segitiga_samakaki(Segitiga):
+    def is_Segitiga_samakaki(self):
+        return False
+
+
+
 segitiga1 = Segitiga(10, 4)
 print(segitiga1.alas)
 print(segitiga1.hitung_luas())
+
+sama_kaki = Segitiga_samakaki(10, 10)
+print(sama_kaki.is_Segitiga_samakaki())
+
+sama_sisi = Segitiga_samasisi(90, 20)
+print(sama_sisi.is_Segitiga_samasisi())
+
 
 #enheritance
